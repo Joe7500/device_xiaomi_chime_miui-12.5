@@ -158,6 +158,7 @@ dalvik.vm.dex2oat64.enabled=true
 dalvik.vm.systemuicompilerfilter=speed
 
 # Display
+ro.surface_flinger.protected_contents=true
 debug.egl.hw=0
 debug.sf.enable_advanced_sf_phase_offset=1
 debug.mdpcomp.logs=0

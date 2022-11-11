@@ -205,7 +205,7 @@ vendor.display.qdcm.mode_combine=1
 vendor.gralloc.disable_ubwc=0
 vendor.gralloc.secure_preview_buffer_format=420_sp
 vendor.display.disable_rotator_downscale=1
-
+debug.sf.disable_client_composition_cache=1
 
 # Google WFD settings
 persist.debug.wfd.enable=1

@@ -105,7 +105,8 @@ PRODUCT_PACKAGES += \
     libcamera2ndk_vendor \
     libdng_sdk.vendor \
     libstdc++.vendor \
-    libgui_vendor
+    libgui_vendor \
+    Aperture
 
 # Component overrides
 PRODUCT_COPY_FILES += \

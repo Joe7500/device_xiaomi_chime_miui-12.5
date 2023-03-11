@@ -14,7 +14,10 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/xiaomi/chime/chime-vendor.mk)
 
-# Inherit several Android Go Configurations(Beneficial for everyone, even on non-Go devices)
+# Inherit from proprietary files for QTI perf
+$(call inherit-product-if-exists, vendor/xiaomi/chime-perf/perf.mk)
+
+# Inherit several Android Go Configurations (Beneficial for everyone, even on non-Go devices)
 PRODUCT_USE_PROFILE_FOR_BOOT_IMAGE := true
 PRODUCT_DEX_PREOPT_BOOT_IMAGE_PROFILE_LOCATION := frameworks/base/config/boot-image-profile.txt
 
@@ -328,10 +331,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_BUILD_SUPER_PARTITION := false
 
-# Perf
-PRODUCT_PACKAGES += \
-    vendor.qti.hardware.perf@2.2 \
-    vendor.qti.hardware.perf@2.2.vendor
+# Powerhint
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml
 
 # Dex
 ifneq ($(TARGET_BUILD_VARIANT),eng)

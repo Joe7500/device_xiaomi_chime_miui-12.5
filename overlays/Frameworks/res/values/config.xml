@@ -120,6 +120,19 @@
     <!-- Should the pinner service pin the Camera application? -->
      <bool name="config_pinnerCameraApp">false</bool>
 
+    <!-- Disabling Components. -->
+     <string-array name="config_deviceDisabledComponents" translatable="false">
+         <item>com.google.android.gms/com.google.android.gms.nearby.discovery.service.DiscoveryService</item> 
+         <item>com.google.android.gms/com.google.android.gms.nearby.messages.service.NearbyMessagesService</item> 
+         <item>com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver</item> 
+         <item>com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver</item> 
+         <item>com.google.android.as/com.google.intelligence.sense.ambientmusic.AmbientMusicNotificationsSettingsActivity</item> 
+         <item>com.google.android.as/com.google.intelligence.sense.ambientmusic.AmbientMusicSettingsActivity</item> 
+         <item>com.google.android.as/com.google.intelligence.sense.ambientmusic.AmbientMusicSetupWizardActivity</item> 
+         <item>com.google.android.as/com.google.intelligence.sense.ambientmusic.history.HistoryContentProvider</item> 
+         <item>com.google.android.as/com.google.intelligence.sense.ambientmusic.history.HistoryActivity</item>
+     </string-array>
+
     <!-- Should the pinner service pin the Home application? -->
      <bool name="config_pinnerHomeApp">false</bool>
 

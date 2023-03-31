@@ -70,6 +70,10 @@ persist.vendor.ssr.enable_ramdumps=1
 # Time-services
 persist.timed.enable=true
 
+# Volume Steps
+ro.config.media_vol_steps=15
+ro.config.vc_call_vol_steps=10
+
 # WFD settings
 debug.sf.enable_hwc_vds=0
 media.wfd.max_resolution=8

@@ -21,12 +21,15 @@ debug.cpurend.vsync=false
 # Fingerprint
 ro.hardware.fp.sideCap=true
 
-# Fwk detect
+# FWK Detect
 ro.vendor.qti.va_aosp.support=1
 
 # LMKD
 ro.config.low_ram=false
-ro.lmk.log_stats=true
+ro.lmk.log_stats=false
+ro.lmk.debug=false
+persist.sys.lmk.reportkills=false
+sys.lmk.reportkills=false
 
 # Netflix custom property
 ro.netflix.bsp_rev=Q6115-31409-1

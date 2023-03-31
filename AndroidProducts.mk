@@ -5,13 +5,13 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_citrus.mk \
-    $(LOCAL_DIR)/lineage_lime.mk
+    $(LOCAL_DIR)/bootleg_citrus.mk \
+    $(LOCAL_DIR)/bootleg_lime.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_citrus-user \
-    lineage_citrus-userdebug \
-    lineage_citrus-eng \
-    lineage_lime-user \
-    lineage_lime-userdebug \
-    lineage_lime-eng
+    bootleg_citrus-user \
+    bootleg_citrus-userdebug \
+    bootleg_citrus-eng \
+    bootleg_lime-user \
+    bootleg_lime-userdebug \
+    bootleg_lime-eng

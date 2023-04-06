@@ -40,7 +40,7 @@ PRODUCT_PACKAGES += \
 
 # APN
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/etc/apns-conf.xml:system/etc/apns-conf.xml
+    $(LOCAL_PATH)/overlays/CarrierConfig/etc/apns-conf.xml:system/etc/apns-conf.xml
 
 # Audio
 PRODUCT_PACKAGES += \

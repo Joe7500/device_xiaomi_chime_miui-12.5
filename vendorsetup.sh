@@ -11,9 +11,9 @@ sleep 1
 git clone https://github.com/itsHanibee/kernel_xiaomi_chime -b hani kernel/xiaomi/chime
 
 # Clone vendor
-git clone https://gitlab.com/chimeoss/vendor_xiaomi_chime -b lineage-20 vendor/xiaomi/chime
-git clone https://gitlab.com/chimeoss/vendor_xiaomi_citrus -b lineage-20 vendor/xiaomi/citrus
-git clone https://gitlab.com/chimeoss/vendor_xiaomi_lime -b lineage-20 vendor/xiaomi/lime
+git clone https://gitlab.com/itsHanibee/vendor_xiaomi_chime -b lineage-20 vendor/xiaomi/chime
+git clone https://gitlab.com/itsHanibee/vendor_xiaomi_citrus -b lineage-20 vendor/xiaomi/citrus
+git clone https://gitlab.com/itsHanibee/vendor_xiaomi_lime -b lineage-20 vendor/xiaomi/lime
 
 # Hardware
 rm -rf hardware/xiaomi

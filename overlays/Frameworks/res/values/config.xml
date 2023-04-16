@@ -259,7 +259,7 @@
 
     <!-- The maximum range of gamma adjustment possible using the screen
          auto-brightness adjustment setting. -->
-     <fraction name="config_autoBrightnessAdjustmentMaxGamma">100.0%</fraction>
+     <fraction name="config_autoBrightnessAdjustmentMaxGamma">65.0%</fraction>
 
     <!-- User activity timeout: Maximum screen dim duration as a percentage of screen off timeout.
          This resource is similar to config_maximumScreenDimDuration but the maximum
@@ -280,14 +280,14 @@
          brightness changes occur in response to an observed change in light level that exceeds the
          hysteresis threshold. -->
 
-    <integer name="config_autoBrightnessBrighteningLightDebounce">2000</integer>
-    <integer name="config_autoBrightnessDarkeningLightDebounce">2000</integer>
+    <integer name="config_autoBrightnessBrighteningLightDebounce">3400</integer>
+    <integer name="config_autoBrightnessDarkeningLightDebounce">1800</integer>
 
     <!-- Fast brightness animation ramp rate in brightness units per second-->
-    <integer name="config_brightness_ramp_rate_fast">4933</integer>
+    <integer name="config_brightness_ramp_rate_fast">4800</integer>
 
     <!-- Slow brightness animation ramp rate in brightness units per second-->
-    <integer name="config_brightness_ramp_rate_slow">3946</integer>
+    <integer name="config_brightness_ramp_rate_slow">3900</integer>
      
          <!-- An array describing the screen's backlight values corresponding to the brightness
          values in the config_screenBrightnessNits array.

@@ -7,7 +7,7 @@ echo -e "${color}Applying patches${end}"
 sleep 1
 
 # Clone kernel
-git clone https://github.com/itsHanibee/kernel_xiaomi_chime -b main kernel/xiaomi/chime
+git clone https://github.com/BootleggersROM-Devices/kernel_xiaomi_chime -b main kernel/xiaomi/chime
 
 # Clone vendor
 git clone https://gitlab.com/itsHanibee/vendor_xiaomi_chime -b lineage-20 vendor/xiaomi/chime

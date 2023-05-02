@@ -205,7 +205,6 @@ vendor.display.qdcm.mode_combine=1
 vendor.gralloc.disable_ubwc=0
 vendor.gralloc.secure_preview_buffer_format=420_sp
 vendor.display.disable_rotator_downscale=1
-debug.sf.disable_client_composition_cache=1
 ro.surface_flinger.set_idle_timer_ms?=80
 ro.surface_flinger.set_touch_timer_ms=200
 ro.surface_flinger.set_display_power_timer_ms=1000

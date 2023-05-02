@@ -19,7 +19,7 @@ PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-# Some Build Flags
+# Bootleggers Build Flags
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_USES_BLUR := false
@@ -31,9 +31,7 @@ TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 
 # Maintainer Prop
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.bootleggers.maintainer=hani~🤍
-
+DEVICE_MAINTAINERS := "hani~🤍"
 BOOTLEGGERS_BUILD_TYPE := Shishufied
 TARGET_BOOTLEG_ARCH := arm64
 WITH_GAPPS := true

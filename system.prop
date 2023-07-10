@@ -27,6 +27,10 @@ ro.hardware.fp.sideCap=true
 # FWK Detect
 ro.vendor.qti.va_aosp.support=1
 
+# Input
+ro.com.google.ime.kb_pad_port_b=1
+ro.com.google.ime.corner_key_r=32
+
 # LMKD
 ro.config.low_ram=false
 ro.lmk.log_stats=false

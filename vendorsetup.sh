@@ -13,7 +13,7 @@ git clone --depth=1 https://github.com/BootleggersROM-Devices/kernel_xiaomi_chim
 git clone https://gitlab.com/itsHanibee/vendor_xiaomi_chime -b lineage-20 vendor/xiaomi/chime
 git clone https://gitlab.com/itsHanibee/vendor_xiaomi_citrus -b lineage-20 vendor/xiaomi/citrus
 git clone https://gitlab.com/itsHanibee/vendor_xiaomi_lime -b lineage-20 vendor/xiaomi/lime
-git clone https://gitlab.com/itsHanibee/vendor_xiaomi_chime-perf -b thirteen vendor/xiaomi/chime-perf
+git clone https://gitlab.com/itsHanibee/vendor_xiaomi_chime-perf -b lineage-20 vendor/xiaomi/chime-perf
 
 # Hardware
 rm -rf hardware/xiaomi

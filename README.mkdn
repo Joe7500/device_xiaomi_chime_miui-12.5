@@ -3,8 +3,9 @@
 Device Tree for Redmi 9T/9 Power/Note 9 4G (lime) and POCO M3 (citrus)
 ===========================================
 
-The Redmi 9T/9 Power/Note 9 4G is a budget smartphone from Redmi, Released 2021, January 18  
-The POCO M3 is a budget smartphone from Redmi, Released 2020, November 24  
+> The Redmi 9T/9 Power/Note 9 4G are a series of budget smartphones from Redmi, released on January 18th 2021.
+
+> The POCO M3 is a budget smartphone from POCO, released on November 24th 2020.
 
 ## Device specifications
 

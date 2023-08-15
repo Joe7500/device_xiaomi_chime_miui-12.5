@@ -71,6 +71,8 @@ on late-fs
 on post-fs-data
     mkdir /vendor/data/tombstones 0771 system system
     mkdir /data/vendor/tloc 0700 system drmrpc
+
+#Turbo Sched
     chmod 0666 /sys/module/migt/parameters/mi_viptask
     restorecon /sys/module/migt/parameters/mi_viptask
 
@@ -452,10 +454,3 @@ on property:vendor.post_boot.parsed=1
 ########### FTM end ##########
 ########### FTM end ##########
 ########### FTM end ##########
-
-service checknv /system/bin/checknv
-    class main
-    user root
-    group root system
-    oneshot
-    seclabel u:r:checknv:s0

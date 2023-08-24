@@ -3451,10 +3451,14 @@
 
     <path name="voice-dmic-ef-tmus">
         <path name="dmic-endfire" />
+        <ctl name="DEC7 Volume" value="97"/>
+        <ctl name="DEC8 Volume" value="97"/>
     </path>
 
     <path name="voice-dmic-ef">
         <path name="dmic-endfire" />
+        <ctl name="DEC7 Volume" value="97"/>
+        <ctl name="DEC8 Volume" value="97"/>
     </path>
 
     <path name="voice-speaker-dmic-ef">
@@ -3463,6 +3467,8 @@
 
     <path name="voice-rec-dmic-ef">
         <path name="dmic-endfire" />
+        <ctl name="DEC7 Volume" value="106"/>
+        <ctl name="DEC8 Volume" value="106"/>
     </path>
 
     <path name="voice-rec-dmic-ef-fluence">
@@ -3522,14 +3528,18 @@
 
     <path name="unprocessed-mic">
         <path name="unprocessed-handset-mic" />
+        <ctl name="DEC7 Volume" value="89"/>  
     </path>
 
     <path name="unprocessed-stereo-mic">
         <path name="voice-rec-dmic-ef" />
+        <ctl name="DEC7 Volume" value="89"/>
+        <ctl name="DEC8 Volume" value="89"/>
     </path>
 
     <path name="unprocessed-headset-mic">
         <path name="headset-mic" />
+        <ctl name="DEC7 Volume" value="89"/>
     </path>
 
     <!-- USB TTY start -->

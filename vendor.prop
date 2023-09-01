@@ -115,6 +115,7 @@ persist.vendor.qcom.bluetooth.soc=cherokee
 persist.vendor.qcom.bluetooth.twsp_state.enabled=false
 persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac
 persist.vendor.bt.aac_frm_ctl.enabled=true
+persist.vendor.btstack.enable.lpa=true
 ro.bluetooth.a2dp_offload.supported=true
 ro.vendor.bluetooth.wipower=false
 

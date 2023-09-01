@@ -61,6 +61,9 @@ ro.netflix.bsp_rev=Q6115-31409-1
 # NFC
 ro.nfc.port=I2C
 
+# Phantom process monitoring
+sys.fflag.override.settings_enable_monitor_phantom_procs=false
+
 # Radio
 persist.sys.fflag.override.settings_provider_model=false
 rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so

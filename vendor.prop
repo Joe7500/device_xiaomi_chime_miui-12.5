@@ -267,10 +267,6 @@ persist.sys.oem.otg_support=true
 # QCA1530 detection
 sys.qca1530=detect
 
-# PASR
-vendor.pasr.activemode.enabled=true
-vendor.power.pasr.enabled=false
-
 # Platform
 ro.soc.manufacturer=QTI
 ro.soc.model=SM6115

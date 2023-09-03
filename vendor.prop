@@ -124,10 +124,6 @@ af.fast_track_multiplier=1
 camera.disable_zsl_mode=1
 persist.vendor.camera.logInfoMask=false
 
-# Chipset
-ro.soc.manufacturer=Qualcomm
-ro.soc.model=SM6115
-
 # CNE
 persist.vendor.cne.feature=1
 

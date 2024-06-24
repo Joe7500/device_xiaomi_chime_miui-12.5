@@ -16,6 +16,7 @@ persist.vendor.dpm.feature=1
 dalvik.vm.dex2oat64.enabled=true
 
 # Display
+ro.launcher.blur.appLaunch=0
 persist.demo.hdmirotationlock=false
 debug.cpurend.vsync=false
 debug.sf.disable_backpressure=1

@@ -327,8 +327,7 @@ PRODUCT_BUILD_SUPER_PARTITION := false
 
 # Perf
 PRODUCT_PACKAGES += \
-    vendor.qti.hardware.perf@2.2 \
-    vendor.qti.hardware.perf@2.2.vendor
+    libqti-perfd-client
 
 # Dex
 ifneq ($(TARGET_BUILD_VARIANT),eng)

@@ -119,6 +119,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@3.0-impl-qti-display \
     android.hardware.graphics.mapper@4.0-impl-qti-display \
+    android.hardware.graphics.common-V1-ndk \
+    android.hardware.graphics.common-V1-ndk.vendor \
     android.hardware.memtrack@1.0-impl \
     android.hardware.memtrack@1.0-service \
     vendor.display.config@1.0 \
@@ -144,11 +146,15 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.mapperextensions@1.1.vendor\
     memtrack.bengal \
     gralloc.bengal \
+    hwcomposer.default \
+    libdisplayconfig.qti \
     libqdMetaData \
     libqdMetaData.system \
     libsdmcore \
     libsdmutils \
-    libtinyxml
+    libtinyxml \
+    libqdutils \
+    libqservice
 
 PRODUCT_PACKAGES += \
     libvulkan

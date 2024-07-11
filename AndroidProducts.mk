@@ -5,7 +5,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_chime.mk
+    $(LOCAL_DIR)/yaap_chime.mk
 
 COMMON_LUNCH_CHOICES := \
-    $(foreach variant, user userdebug eng, lineage_chime-$(variant))
+    $(foreach variant, user userdebug eng, yaap_chime-$(variant))

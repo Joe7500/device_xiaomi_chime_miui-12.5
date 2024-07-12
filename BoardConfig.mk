@@ -179,7 +179,7 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 TARGET_SYSTEM_EXT_PROP += $(DEVICE_PATH)/system_ext.prop
 
 # Dex
-WITH_DEXPREOPT := false
+#WITH_DEXPREOPT := false
 
 #ifneq ($(TARGET_BUILD_VARIANT),eng)
 #WITH_DEXPREOPT := true

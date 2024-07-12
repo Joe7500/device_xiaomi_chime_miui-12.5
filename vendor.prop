@@ -121,7 +121,7 @@ persist.vendor.camera.logInfoMask=false
 persist.vendor.quick.charge=1
 
 # Chipset
-ro.soc.manufacturer=Qualcomm
+ro.soc.manufacturer=QTI
 ro.soc.model=SM6115
 
 # Crypto

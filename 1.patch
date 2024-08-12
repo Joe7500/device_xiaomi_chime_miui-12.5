@@ -1,0 +1,91 @@
+commit 2f53662444ce560b9642b0ad2648a6d8d07412fc
+Author: Joe7500 <user@localhost>
+Date:   Thu Jun 27 16:06:07 2024 +0000
+
+    Bringup Lineage
+
+diff --git a/AndroidProducts.mk b/AndroidProducts.mk
+index 3b2ae50..23d97a4 100644
+--- a/AndroidProducts.mk
++++ b/AndroidProducts.mk
+@@ -5,7 +5,7 @@
+ #
+ 
+ PRODUCT_MAKEFILES := \
+-    $(LOCAL_DIR)/bootleg_chime.mk
++    $(LOCAL_DIR)/lineage_chime.mk
+ 
+ COMMON_LUNCH_CHOICES := \
+-    $(foreach variant, user userdebug eng, bootleg_chime-$(variant))
+\ No newline at end of file
++    $(foreach variant, user userdebug eng, lineage_chime-$(variant))
+diff --git a/bootleg_chime.mk b/lineage_chime.mk
+similarity index 68%
+rename from bootleg_chime.mk
+rename to lineage_chime.mk
+index 5da4aeb..5207c7c 100644
+--- a/bootleg_chime.mk
++++ b/lineage_chime.mk
+@@ -12,10 +12,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+ $(call inherit-product, device/xiaomi/chime/device.mk)
+ 
+ # Inherit some common Bootleggers stuff.
+-$(call inherit-product, vendor/bootleggers/config/common_full_phone.mk)
++$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+ 
+ # Device identifier. This must come after all inclusions.
+-PRODUCT_NAME := bootleg_chime
++PRODUCT_NAME := lineage_chime
+ PRODUCT_DEVICE := chime
+ PRODUCT_BRAND := Xiaomi
+ PRODUCT_MODEL := SM6115
+@@ -23,18 +23,10 @@ PRODUCT_MANUFACTURER := Xiaomi
+ 
+ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+ 
+-# Flags
+-TARGET_BOOTLEG_ARCH := arm64
+-WITH_GAPPS := true
+-TARGET_USES_BLUR := false
+-TARGET_INCLUDE_LIVE_WALLPAPERS := false
+-TARGET_INCLUDE_STOCK_ARCORE := false
+-
+ # Boot animation
+ TARGET_BOOT_ANIMATION_RES := 1080
+ TARGET_SCREEN_HEIGHT := 2400
+ TARGET_SCREEN_WIDTH := 1080
+ 
+ # Maintainer
+-DEVICE_MAINTAINERS := hani~🤍
+-BOOTLEGGERS_BUILD_TYPE := Shishufied
++#DEVICE_MAINTAINERS := Joe
+diff --git a/vendorsetup.sh b/vendorsetup.sh
+deleted file mode 100644
+index 9b8c104..0000000
+--- a/vendorsetup.sh
++++ /dev/null
+@@ -1,9 +0,0 @@
+-# Clone Kernel
+-git clone --depth=1 https://github.com/Dominium-Apum/kernel_xiaomi_chime -b android kernel/xiaomi/chime
+-
+-# Clone Vendor
+-git clone https://github.com/Dominium-Apum/vendor_xiaomi_chime vendor/xiaomi/chime
+-
+-# Clone Hardware
+-# rm -rf hardware/xiaomi
+-git clone https://github.com/LineageOS/android_hardware_xiaomi hardware/xiaomi
+diff --git a/vendorsetup.sh.txt b/vendorsetup.sh.txt
+new file mode 100644
+index 0000000..c0ca898
+--- /dev/null
++++ b/vendorsetup.sh.txt
+@@ -0,0 +1,9 @@
++# Clone Kernel
++git clone --depth=1 https://github.com/Joe7500/kernel_xiaomi_chime -b android kernel/xiaomi/chime
++
++# Clone Vendor
++git clone https://github.com/Joe7500/vendor_xiaomi_chime vendor/xiaomi/chime
++
++# Clone Hardware
++# rm -rf hardware/xiaomi
++git clone https://github.com/LineageOS/android_hardware_xiaomi hardware/xiaomi

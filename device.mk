@@ -5,7 +5,7 @@
 #
 
 # Don't forget to sign you builds.
-include vendor/extra/product.mk
+include vendor/lineage-priv/keys/keys.mk
 
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
